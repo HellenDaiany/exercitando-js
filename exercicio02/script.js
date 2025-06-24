@@ -16,28 +16,27 @@ function verificar() {
        img.height = 150;
        img.style.borderRadius = "50%"
        img.style.objectFit = "cover"
-       
        if(fsex[0].checked){
         genero = 'Homem'
         if(idade >=0 && idade < 12){
-            img.setAttribute('src','menino.jpg')
+            img.setAttribute('src','img/menino.jpg')
         }else if(idade < 21){
-            img.setAttribute('src','homemjovem.jpg')
+            img.setAttribute('src','img/homemjovem.jpg')
         }else if(idade < 50){
-            img.setAttribute('src','homem.jpg')
+            img.setAttribute('src','img/homem.jpg')
         }else {
-            img.setAttribute('src','idoso.jpg')
+            img.setAttribute('src','img/idoso.jpg')
         }
        } else if (fsex[1].checked){
         genero = 'Mulher'
          if(idade >=0 && idade < 12){
-            img.setAttribute('src','menina.jpg')
+            img.setAttribute('src','img/menina.jpg')
         }else if(idade < 21){
-            img.setAttribute('src','mulherjovem.jpg')
+            img.setAttribute('src','img/mulherjovem.jpg')
         }else if(idade < 50){
-            img.setAttribute('src','mulher.jpg')
+            img.setAttribute('src','img/mulher.jpg')
         }else {
-            img.setAttribute('src','idosa.jpg')
+            img.setAttribute('src','img/idosa.jpg')
         }
        }
        res.computedStyleMap.textAlign = 'center'
